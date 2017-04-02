@@ -10,6 +10,7 @@ public class Client {
 
         InetAddress ipAddress = InetAddress.getByName(address);
 
+        //Socket socket = new Socket("127.0.0.1",7777);
         Socket socket = new Socket(ipAddress, serverPort);
 
         // Берем входной и выходной потоки сокета, теперь можем получать и отсылать данные клиентом.
